@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Console · 3AM Yadah Encounter</title>
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css?v=4">
+</head>
+<body>
+  <!-- sign in -->
+  <section class="gate" id="gate" hidden>
+    <div class="gate-art"><img src="/img/gallery/g04.webp" alt=""><div><img class="logo" src="/img/logo.png" alt=""><h1>Ministry <em>console</em></h1><p>Events, notices, the gallery, site content and everyone who reaches out, in one place.</p></div></div>
+    <form class="gate-form" id="loginForm">
+      <span class="kicker">3AM Yadah Encounter</span>
+      <h2>Team sign-in</h2>
+      <p class="muted">Administrators only.</p>
+      <div class="field"><label>Email</label><input class="input" name="email" type="email" required autocomplete="username"></div>
+      <div class="field"><label>Password</label><input class="input" name="password" type="password" required autocomplete="current-password"></div>
+      <button class="btn btn-primary btn-lg btn-block" type="submit">Sign in</button>
+      <div class="row-between"><a class="link" href="/">← Back to the website</a><button class="link" type="button" id="forgot">Forgot password?</button></div>
+      <p class="note" id="loginNote"></p>
+    </form>
+  </section>
+
+  <!-- app shell -->
+  <div class="shell" id="app" hidden>
+    <aside class="side">
+      <a class="side-brand" href="/" target="_blank"><img src="/img/logo.png" alt=""><div><strong>3AM Yadah</strong><span>Ministry console</span></div></a>
+      <nav class="side-nav" id="menu"></nav>
+      <div class="side-foot">
+        <a class="side-link" href="/" target="_blank"><i data-i="external"></i><span>View website</span></a>
+        <button class="side-collapse" id="collapse"><i data-i="chevron-left"></i><span>Collapse</span></button>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="top">
+        <button class="icon-btn menu-toggle" id="burger" aria-label="Menu"><i data-i="menu"></i></button>
+        <div class="crumb"><small>Console /</small> <span id="crumb">Overview</span></div>
+        <div class="grow"></div>
+        <span class="clock" id="clock"></span>
+        <a class="site-back" href="/" target="_blank"><i data-i="globe"></i><span>Website</span></a>
+        <div class="pop">
+          <button class="top-user" id="userBtn"><span class="avatar" id="avatar"></span><span class="who"><b id="meName"></b><span>Administrator</span></span></button>
+          <div class="menu-pop" id="userMenu" hidden>
+            <div class="mp-head"><b id="meEmail"></b></div>
+            <button data-go="settings"><i data-i="sliders"></i>Settings</button>
+            <button id="logout"><i data-i="logout"></i>Sign out</button>
+          </div>
+        </div>
+      </header>
+      <main class="content" id="view"></main>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="modal" hidden><div class="modal" id="modalBox"></div></div>
+  <div class="toasts" id="toasts"></div>
+  <div class="boot" id="loading"><img src="/img/logo.png" alt=""></div>
+
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>

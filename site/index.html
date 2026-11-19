@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3AM Yadah Encounter · Prayer Ministry</title>
+  <meta name="description" content="3AM Yadah Encounter is an ecumenical youth prayer ministry in Nairobi. We pray every Monday, Wednesday and Friday at 3:00 AM (EAT). Arise and shine.">
+  <meta property="og:title" content="3AM Yadah Encounter">
+  <meta property="og:description" content="Prayer every Monday, Wednesday & Friday at 3:00 AM EAT. Arise and shine.">
+  <meta property="og:image" content="img/gallery/g04.webp">
+  <meta name="theme-color" content="#991930">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=5">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#top"><img src="img/logo.png" alt="3AM Yadah Encounter logo"><span>3AM <b>Yadah</b></span></a>
+    <nav class="links" id="links">
+      <a href="#about">About</a><a href="#prayer">Prayer</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#give">Give</a><a href="#constitution">Constitution</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost sm hide-sm" href="#join" data-tab="prayer">Prayer request</a>
+      <a class="btn btn-red sm" href="#join" data-tab="register">Register</a>
+      <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow load-up" style="--d-delay:.05s" data-c="hero.eyebrow"></span>
+          <h1 class="load-up" style="--d-delay:.12s"><span data-c="hero.title"></span> <em data-c="hero.accent"></em></h1>
+          <p class="lead load-up" style="--d-delay:.2s" data-c="hero.text"></p>
+          <div class="hero-btns load-up" style="--d-delay:.28s">
+            <a class="btn btn-red btn-pulse" data-href="contact.whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.3Z"/></svg>Join the prayer group</a>
+            <a class="btn btn-line" href="#give">Support the ministry</a>
+          </div>
+          <div class="hero-meta load-up" style="--d-delay:.36s">
+            <div><b data-count="250">0</b><span>+ at our last vigil</span></div>
+            <div><b data-count="3">0</b><span>nights a week</span></div>
+            <div><b>3:00</b><span>AM EAT</span></div>
+          </div>
+        </div>
+        <div class="hero-art load-scale" style="--d-delay:.2s" aria-hidden="true">
+          <div class="arch a1"><img data-src="hero.img1" alt=""></div>
+          <div class="arch a2"><img data-src="hero.img2" alt=""></div>
+          <div class="arch a3"><img data-src="hero.img3" alt=""></div>
+          <div class="seal"><svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><text><textPath href="#circ">ARISE AND SHINE · 3AM YADAH ENCOUNTER · </textPath></text></svg><img src="img/logo.png" alt=""></div>
+          <div class="live-chip"><i></i><span data-c="prayer.days"></span> · <b data-c="prayer.time"></b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker"><div class="ticker-track" id="ticker"></div></div>
+
+    <!-- NOTICE BOARD -->
+    <section class="sec notices-sec" id="notices">
+      <div class="wrap">
+        <div class="notice-hero reveal" id="noticeHero">
+          <div class="nh-icon">!</div>
+          <div><h3 data-c="notice.title"></h3><p data-c="notice.text"></p></div>
+          <a class="btn btn-light sm" data-href="contact.whatsapp" target="_blank" rel="noopener">WhatsApp group</a>
+        </div>
+        <div class="notice-grid" id="noticeGrid"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="sec" id="about">
+      <div class="wrap">
+        <div class="split">
+          <div class="reveal-left">
+            <span class="eyebrow">About us</span>
+            <h2 data-c="about.title"></h2>
+          </div>
+          <div class="reveal-right">
+            <p data-c="about.text"></p>
+            <p class="muted" data-c="about.text2"></p>
+            <p class="sign" data-c="about.signature"></p>
+          </div>
+        </div>
+        <div class="trio">
+          <figure class="tcard reveal-rotate"><img data-src="about.img1" alt="Worship at a 3AM Yadah Encounter night"><figcaption><span>Mission</span><p data-c="about.mission"></p></figcaption></figure>
+          <figure class="tcard tall reveal-scale d1"><img data-src="about.img2" alt="Prayer and fellowship"><figcaption><span>Vision</span><p data-c="about.vision"></p></figcaption></figure>
+          <figure class="tcard reveal-rotate d2"><img data-src="about.img3" alt="Team building fellowship"><figcaption><span>Values</span><p data-c="about.values"></p></figcaption></figure>
+        </div>
+        <p class="motto reveal">Our motto · <em data-c="about.motto"></em></p>
+      </div>
+    </section>
+
+    <!-- PILLARS (crimson band) -->
+    <section class="band">
+      <div class="wrap">
+        <div class="center reveal"><span class="eyebrow light">Our foundation</span><h2>Three pillars we <em>stand on</em></h2></div>
+        <div class="pillars" id="pillars"></div>
+      </div>
+    </section>
+
+    <!-- PRAYER & FASTING -->
+    <section class="sec" id="prayer">
+      <div class="wrap">
+        <div class="split">
+          <div class="reveal-left"><span class="eyebrow">Prayer &amp; fasting</span><h2>When the city sleeps, <em>we pray.</em></h2></div>
+          <div class="reveal d1"><p>We gather online at <b data-c="prayer.time"></b> every <b data-c="prayer.days"></b>. <span data-c="prayer.platform"></span>.</p></div>
+        </div>
+        <div class="orbs">
+          <div class="orb reveal"><div class="ring"><b>MON</b><small>3:00 AM</small></div><h4>Monday</h4><p>Opening the week in prayer and intercession.</p></div>
+          <div class="orb reveal d1"><div class="ring"><b>WED</b><small>3:00 AM</small></div><h4>Wednesday</h4><p>Midweek encounter: worship, the Word and prayer.</p></div>
+          <div class="orb reveal d2"><div class="ring"><b>FRI</b><small>3:00 AM</small></div><h4>Friday</h4><p>Prayer, then fasting: <span data-c="prayer.fastWeekly"></span>.</p></div>
+          <div class="orb reveal d3"><div class="ring red"><b>3</b><small>DAYS</small></div><h4>Monthly fast</h4><p data-c="prayer.fastMonthly"></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="sec alt" id="events">
+      <div class="wrap">
+        <div class="head-row reveal">
+          <div><span class="eyebrow">Events &amp; gatherings</span><h2>Our events <em>journey</em></h2></div>
+          <div class="seg" id="evTabs"><button class="on" data-f="upcoming">Upcoming</button><button data-f="completed">Past events</button></div>
+        </div>
+        <div class="events" id="eventsGrid"></div>
+        <div class="partner reveal-scale">
+          <div><h3>Want to host or partner on an event?</h3><p>We welcome collaborations on worship nights, prayer conferences and community outreach.</p></div>
+          <a class="btn btn-light" href="#contact">Partner with us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="sec" id="gallery">
+      <div class="wrap">
+        <div class="head-row reveal">
+          <div><span class="eyebrow">Our gallery</span><h2>Moments &amp; <em>memories</em></h2></div>
+          <p class="muted narrow">Every picture tells a story of God’s faithfulness and the unity of our community.</p>
+        </div>
+        <div class="chips" id="albums"></div>
+        <div class="masonry" id="masonry"></div>
+        <div class="center"><button class="btn btn-line" id="moreBtn">Show more</button></div>
+      </div>
+      <div class="art-strip" aria-label="Faith artwork"><div class="art-track" id="artTrack"></div></div>
+    </section>
+
+    <!-- JOIN: register / prayer request -->
+    <section class="sec dark" id="join">
+      <div class="wrap join">
+        <div class="reveal-left">
+          <span class="eyebrow light">Get involved</span>
+          <h2>Arise and <em>shine</em> with us.</h2>
+          <p>Register to join the community and the WhatsApp prayer group, or send a prayer request. Our prayer team stands with you.</p>
+          <ul class="ticks"><li>Prayer partner matching</li><li>Night prayer sessions on Google Meet</li><li>Retreats, fasting and fellowship</li></ul>
+          <img class="join-art" src="img/art/a3.webp" alt="He left the 99 to find me, Luke 15:1-7">
+        </div>
+        <div class="panel reveal-right">
+          <div class="seg dark-seg" id="joinTabs"><button class="on" data-t="register">Register</button><button data-t="prayer">Prayer request</button></div>
+          <form id="regForm" class="form" data-col="registrations">
+            <div class="row"><label>First name<input name="firstName" required maxlength="60"></label><label>Last name<input name="lastName" required maxlength="60"></label></div>
+            <div class="row"><label>Email<input name="email" type="email" required maxlength="120"></label><label>Phone<input name="phone" type="tel" required maxlength="20"></label></div>
+            <div class="row"><label>Denomination<input name="denomination" maxlength="80"></label><label>Location<input name="location" maxlength="80"></label></div>
+            <label class="check"><input type="checkbox" name="whatsapp" checked> Add me to the WhatsApp prayer group</label>
+            <button class="btn btn-red block" type="submit">Register</button>
+            <p class="form-note"></p>
+          </form>
+          <form id="prayForm" class="form" data-col="prayers" hidden>
+            <div class="row"><label>Your name<input name="name" required maxlength="80"></label><label>Email<input name="email" type="email" required maxlength="120"></label></div>
+            <label>Phone (optional)<input name="phone" type="tel" maxlength="20"></label>
+            <label>Prayer request<textarea name="request" rows="3" required maxlength="2000"></textarea></label>
+            <label class="check"><input type="checkbox" name="anonymous"> Share anonymously with the prayer team</label>
+            <button class="btn btn-red block" type="submit">Send prayer request</button>
+            <p class="form-note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIVE -->
+    <section class="sec" id="give">
+      <div class="wrap">
+        <div class="center reveal"><span class="eyebrow">Support the ministry</span><h2>Sow into the <em>vision</em></h2><p class="muted" data-c="giving.note"></p></div>
+        <div class="give">
+          <div class="gcard reveal-left">
+            <span class="gtag">Bank transfer</span>
+            <h3 data-c="giving.bank"></h3>
+            <dl><dt>Account name</dt><dd data-c="giving.accountName"></dd><dt>Account number</dt><dd><b data-c="giving.accountNo"></b> <button class="copy" data-copy="giving.accountNo">Copy</button></dd><dt>Account</dt><dd data-c="giving.branchNote"></dd></dl>
+          </div>
+          <div class="gcard red reveal-right">
+            <span class="gtag">M-Pesa</span>
+            <h3>PayBill</h3>
+            <dl><dt>Business number</dt><dd><b data-c="giving.paybill"></b> <button class="copy" data-copy="giving.paybill">Copy</button></dd><dt>Account number</dt><dd><b data-c="giving.mpesaAcc"></b></dd><dt>Example</dt><dd>110318751#Mwangi</dd></dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSTITUTION -->
+    <section class="sec alt" id="constitution">
+      <div class="wrap const">
+        <div class="reveal">
+          <span class="eyebrow">Our constitution</span>
+          <h2>Our guiding <em>constitution</em></h2>
+          <p data-c="constitution.summary"></p>
+          <div class="toc" id="toc"></div>
+        </div>
+        <div class="book reveal-scale">
+          <div class="book-cover">
+            <img src="img/logo.png" alt="">
+            <span>3AM Yadah Encounter</span>
+            <h3>Constitution</h3>
+            <p>Founded <b data-c="constitution.founded"></b><br>by <b data-c="constitution.founder"></b></p>
+          </div>
+          <div class="book-stats"><div><b data-c="constitution.articles"></b><span>Articles</span></div><div><b data-c="constitution.pages"></b><span>Pages</span></div><div><b data-c="constitution.year"></b><span>Established</span></div></div>
+          <a class="btn btn-red block" data-href="constitution.pdf" target="_blank" rel="noopener">Read the full constitution</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-sec">
+      <div class="wrap cta">
+        <div class="cta-copy reveal-left">
+          <span class="eyebrow light">Faith can move mountains</span>
+          <h2>Ask God. Tell God. <em>Thank God.</em></h2>
+          <p>Whatever you are carrying tonight, you don’t have to carry it alone. Step in faith and pray with us at 3:00 AM.</p>
+          <div class="hero-btns"><a class="btn btn-red btn-pulse" href="#join" data-tab="register">Join the family</a><a class="btn btn-glass" href="#join" data-tab="prayer">Send a prayer request</a></div>
+        </div>
+        <div class="cta-art reveal-scale" aria-hidden="true">
+          <img class="ca ca1" src="img/art/a2.webp" alt=""><img class="ca ca2" src="img/art/a4.webp" alt=""><img class="ca ca3" src="img/art/a7.webp" alt=""><img class="ca ca4" src="img/art/a1.webp" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="sec" id="contact">
+      <div class="wrap contact">
+        <div class="reveal-left">
+          <span class="eyebrow">Get in touch</span>
+          <h2>We’d love to <em>hear from you</em></h2>
+          <p class="muted">Questions, testimonies, partnerships or spiritual guidance. We typically respond within 24 hours.</p>
+          <ul class="info">
+            <li><span>Email</span><a data-mail="contact.email"></a></li>
+            <li><span>Phone</span><a data-tel="contact.phone1"></a> · <a data-tel="contact.phone2"></a></li>
+            <li><span>Address</span><p data-c="contact.address"></p></li>
+            <li><span>Prayer hours</span><p><b data-c="prayer.days"></b>, <b data-c="prayer.time"></b>, on Google Meet</p></li>
+          </ul>
+        </div>
+        <form class="panel light form reveal-right" id="msgForm" data-col="messages">
+          <h3>Send us a message</h3>
+          <div class="row"><label>Your name<input name="name" required maxlength="80"></label><label>Email<input name="email" type="email" required maxlength="120"></label></div>
+          <div class="row"><label>Subject<input name="subject" maxlength="120"></label>
+            <label>Type of inquiry<select name="type"><option>Prayer Request</option><option>General Question</option><option>Testimony / Thanksgiving</option><option>Partnership Opportunity</option><option>Other</option></select></label></div>
+          <label>Message<textarea name="message" rows="3" required maxlength="3000"></textarea></label>
+          <button class="btn btn-red block" type="submit">Send message</button>
+          <p class="form-note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-grid">
+      <div>
+        <a class="brand light" href="#top"><img src="img/logo.png" alt=""><span>3AM <b>Yadah</b> Encounter</span></a>
+        <p>Connecting believers through prayer and support. Join us to grow in faith and fellowship.</p>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div><h4>Explore</h4><a href="#about">About us</a><a href="#events">Events</a><a href="#gallery">Gallery</a><a href="#join">Prayer requests</a><a href="#constitution">Constitution</a></div>
+      <div><h4>Contact</h4><a data-mail="contact.email"></a><a data-tel="contact.phone1"></a><p data-c="contact.address"></p></div>
+      <div><h4>Newsletter</h4><p>Notices and inspiration, straight to your inbox.</p>
+        <form id="newsForm" class="news" data-col="subscribers"><input name="email" type="email" placeholder="Your email" required maxlength="120"><button class="btn btn-red sm" type="submit">Join</button><p class="form-note"></p></form>
+      </div>
+    </div>
+    <div class="wrap foot-bottom"><span>© <span id="yr"></span> 3AM Yadah Encounter. All rights reserved.</span><span class="script">Arise and shine</span></div>
+  </footer>
+
+  <a class="wa-float" data-href="contact.whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.8-.1 1.3Z"/></svg></a>
+
+  <div class="lightbox" id="lightbox" hidden><button class="lb-x" aria-label="Close">×</button><button class="lb-prev" aria-label="Previous">‹</button><figure><div id="lbMedia"></div><figcaption id="lbCap"></figcaption></figure><button class="lb-next" aria-label="Next">›</button></div>
+
+  <script type="module" src="js/site.js?v=4"></script>
+</body>
+</html>

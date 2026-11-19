@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Setup · 3AM Yadah Encounter</title>
+  <link rel="icon" href="/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css?v=4">
+</head>
+<body>
+  <section class="gate">
+    <div class="gate-art"><img src="/img/gallery/g26.webp" alt=""><div><img class="logo" src="/img/logo.png" alt=""><h1>First-time <em>setup</em></h1><p>Creates an administrator for the 3AM Yadah Encounter console. The page locks itself as soon as it has been used.</p></div></div>
+    <form class="gate-form" id="setupForm" novalidate>
+      <span class="kicker">3AM Yadah Encounter</span>
+      <h2>Create an administrator</h2>
+      <p class="note" id="state">Checking…</p>
+      <div id="fields" hidden style="display:grid;gap:12px">
+        <div class="field" id="codeWrap" hidden><label>Setup code</label><input class="input" name="code" autocomplete="off"><span class="hint">Get it from Admin › Settings.</span></div>
+        <div class="field"><label>Full name</label><input class="input" name="name" required maxlength="80"></div>
+        <div class="field"><label>Email</label><input class="input" name="email" type="email" required autocomplete="username"></div>
+        <div class="field"><label>Password</label><input class="input" name="password" type="password" required minlength="8" autocomplete="new-password"><span class="hint">At least 8 characters.</span></div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Create administrator</button>
+      </div>
+      <p class="note" id="note"></p>
+      <a class="link" href="/admin">Go to admin sign-in →</a>
+    </form>
+  </section>
+  <script type="module" src="/js/setup.js"></script>
+</body>
+</html>

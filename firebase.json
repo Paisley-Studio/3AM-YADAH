@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "site",
+    "ignore": ["firebase.json", "**/.*"],
+    "cleanUrls": true,
+    "headers": [
+      { "source": "**/*.@(webp|png|jpg|jpeg|svg)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] },
+      { "source": "/@(admin|setup){,/**}", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] }
+    ]
+  },
+  "firestore": { "rules": "firestore.rules", "indexes": "firestore.indexes.json" },
+  "storage": { "rules": "storage.rules" }
+}
